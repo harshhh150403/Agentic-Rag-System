@@ -1,0 +1,19 @@
+question,f1_score,semantic_similarity,precision,recall,generated_answer
+What are the two main components of the Transformer architecture as described in 'Attention Is All You Need'?,0.385964912,0.769334316,0.458333333,0.333333333,"The two main components of the Transformer architecture, as described in the paper 'Attention Is All You Need', are the **Encoder** and the **Decoder**."
+What does the acronym BERT stand for?,1,1,1,1,BERT stands for Bidirectional Encoder Representations from Transformers.
+What two unsupervised tasks is BERT pre-trained on?,1,1,1,1,BERT is pre-trained on two unsupervised tasks: Masked Language Model (MLM) and Next Sentence Prediction (NSP).
+How many parameters does the largest GPT-3 model have?,0.782608696,0.970255136,0.642857143,1,"The largest GPT-3 model, known as GPT-3 175B, has 175 billion parameters."
+What is the purpose of Multi-Head Attention?,0.341708543,0.778579056,0.217948718,0.790697674,"Multi-Head Attention is a crucial component in Transformer models, designed to enhance the model's ability to process and understand sequences. Its primary purposes include:
+
+1.  **Capturing Diverse Relationships:** It allows the model to jointly attend to information from different representation subspaces at different positions. Each ""attention head"" learns to focus on different aspects or types of relationships within the input sequence. For example, one head might focus on syntactic dependencies, while another focuses on semantic relationships.
+2.  **Increased Representational Capacity:** By having multiple attention heads, the model can look at the same input from various ""perspectives"" or with different ""filters"" simultaneously. This enriches its understanding and ability to capture a wider range of patterns and dependencies than a single attention mechanism could.
+3.  **Improved Robustness:** It helps the model to capture a wider range of contextual information, making it more robust to variations in input data and better at understanding complex long-range dependencies."
+What is the function of the special [CLS] token in BERT?,0.594594595,0.815001547,0.471428571,0.804878049,"The special `[CLS]` token in BERT is primarily used for classification tasks. It is always the first token of any input sequence. Its final hidden state (output embedding) is taken as the aggregate sequence representation for classification. This means that for tasks requiring a single output for the entire input (e.g., sentiment analysis), the vector corresponding to the `[CLS]` token is used as the input to the classification layer."
+What does 'few-shot learning' mean in the context of GPT-3?,0.472972973,0.904101312,0.321100917,0.897435897,"In the context of GPT-3, 'few-shot learning' refers to the model's ability to perform a new task with only a small number of examples, without requiring any gradient updates or fine-tuning of the model's parameters. Instead, the task description and a few examples are provided as part of the input prompt to the pre-trained GPT-3 model. GPT-3 then leverages its extensive pre-training knowledge to understand the task and generate appropriate outputs, demonstrating a remarkable capacity for generalization from very limited demonstrations. This contrasts with traditional fine-tuning, which requires a much larger dataset and updates to the model's weights."
+,,,,,
+,,,,,
+ Average Scores ,,,,,
+Average Semantic Similarity: 0.8910,,,,,
+Average F1 Score: 0.6540,,,,,
+Average Precision: 0.5874,,,,,
+Average Recall: 0.8323,,,,,
