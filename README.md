@@ -1,2 +1,2 @@
 # Agentic-Rag-System
-this is a ReAct Rag System to answer questions about research paper
+this is a ReAct Rag question-answering chatbot about research papers
